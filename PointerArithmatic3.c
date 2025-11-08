@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int iArr[] = {11, 21, 51, 101, 111};
+    int *p = NULL;
+    int *q = NULL;
+
+    p = &(iArr[1]);
+    q = &(iArr[4]);
+
+    //p+q;     //Not Allowed
+    p=p+3; //allowed 
+
+    printf("Data pointed by p is: %d\n",*p);
+
+
+    return 0;
+}
